@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toasty toast</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h2>Click each toast below:</h2>
+    <button
+      class="body-button"
+      onclick="showToast('quote', 'One with God is majority')"
+    >
+      Favorite quote</button
+    ><button class="body-button" onclick="showToast('color', 'Orange🍊')">
+      Favorite color</button
+    ><button
+      class="body-button"
+      onclick="showToast('book', 'PDL by Rick Warren📚')"
+    >
+      Favorite book</button
+    ><button class="body-button" onclick="showToast('artist', 'Steffany')">
+      Favorite artist
+    </button>
+
+    <div class="toast-box" id="toastBox"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

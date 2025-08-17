@@ -1,0 +1,70 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 40px;
+    background-color: #181212;
+}
+
+h2{
+    color: wheat;
+}
+.body-button{
+    padding: 20px;
+    width: 200px;
+    border: 1px solid rgb(181, 175, 175);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    color: rgb(192, 119, 23);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* Toast Box */
+.toast-box{
+    position: fixed;
+    top: 20px;
+    left: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+
+/* Toast Box Style */
+.toast{
+    min-width: 220px;
+    background: white;
+    padding: 12px 16px;
+    border-left: 5px solid #333;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+
+.toast.show{
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+.toast button{
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: tan;
+}
+
+
+/* Types */
+.toast.quote{border-color: #2196F3;}
+.toast.color{border-color: #ff9800;}
+.toast.book{border-color: #4CAF50;}
+.toast.artist{border-color: #f4e736;}
