@@ -25,7 +25,7 @@ h2{
 .toast-box{
     position: fixed;
     top: 20px;
-    left: 45px;
+    left: 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
